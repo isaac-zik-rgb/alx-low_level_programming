@@ -14,7 +14,7 @@ printf("byte(s)\n");
 
 printf("Size of a long int: %d", sizeof(long int));
 printf("byte(s)\n");
- 
+
 printf("Size of a long long int: %d", sizeof(long long int));
 printf("byte(s)\n");
 
