@@ -7,15 +7,14 @@
 int main(void)
 {
 int a;
-int b;
-int j;
-b = 44;
-j = 32;
-for (a = 48; a <= 57; ++a)
+for (a = 48; a <= 57; a++)
 {
 putchar(a);
-putchar(b);
-putchar(j);
+if (a != 57)
+{
+putchar(44);
+putchar(32);
+}
 }
 putchar(10);
 return (0);
