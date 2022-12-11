@@ -6,12 +6,15 @@
  */
 int main(void)
 {
-int i;
+int a;
+int b;
 int j;
-for (i = 48; i <= 57; i++)
+b = 44;
+j = 32;
+for (a = 48; a <= 57; ++a)
 {
-putchar(i);
-for (j = 97; j <= 102; j++)
+putchar(a);
+putchar(b);
 putchar(j);
 }
 putchar(10);
