@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (success)
  */
-void print_alphabate(int i)
+void print_alphabet(int i)
 {
 for (i = 97; i <= 122; i++)
 _putchar(i);
