@@ -5,7 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-print_alphabet(void)
+int print_alphabet(void)
 {
 int i;
 for (i = 97; i <= 122; i++)
