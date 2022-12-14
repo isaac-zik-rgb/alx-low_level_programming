@@ -5,11 +5,11 @@
  *
  * Return: Always 0 (success)
  */
-void print_alphabate(void)
+void print_alphabate()
 {
   int i;
 for (i = 97; i <= 122; i++)
 _putchar(i);
  _putchar(10);
- return (0);
+ return (void);
 }
