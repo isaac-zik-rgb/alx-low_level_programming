@@ -7,8 +7,8 @@
  */
 int _abs(int x)
 {
-  int x;
-  x = 0;
+  for (x = 0; x <= 10; x++)
+    {
   if (x >= 0)
     {
       return (x);
@@ -17,4 +17,6 @@ int _abs(int x)
     {
       return (x -'0');
     }
+    }
 }
+
