@@ -5,7 +5,7 @@
  *@int: return an integer
  * Return: Always 0(Success)
  */
-int _abs(int)
+int _abs(int x)
 {
   int x;
   x = 0;
