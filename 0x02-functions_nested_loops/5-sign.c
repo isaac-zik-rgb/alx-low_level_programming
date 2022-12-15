@@ -8,29 +8,24 @@
  */
 int print_sign(int n)
 {
-  int r, a, b;
-  r = (n > 0);
-  a = (n == 0);
-  b = (n < 0);
-  if (n == r)
+  int r;
+  r = if (n > 0)
     {
-      _putchar('+');
-      _putchar(',');
-      _putchar(' ');
-      return (r);
+     _putchar('+');
+     _putchar(',');
+     _putchar(' ');
     }
-  else if (n == a)
+  else if ( n == 0)
     {
-      _putchar('0');
-      _putchar(',');
-      _putchar(' ');
-	return (a);
+     _putchar('0');
+     _putchar(',');
+     _putchar(' ');
     }
-  else (n == b)
+  else (n < 0)
 	 {
-	   _putchar('-');
-	   _putchar(',');
-	   _putchar(' ');
-	   return (b + '0');
+	  _putchar('-');
+	  _putchar(',');
+	  _putchar(' ');
 	 }
-  
+  return (r);
+}
