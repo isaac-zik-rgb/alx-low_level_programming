@@ -8,16 +8,29 @@
  */
 int print_sign(int n)
 {
-return   (if (n > 0)
-      {
-      putchar('+');
-    }
-  else if (n == 0)
+  int r, a, b;
+  r = (n > 0);
+  a = (n == 0);
+  b = (n < 0);
+  if (n == r)
     {
-      putchar('0');
+      _putchar('+');
+      _putchar(',');
+      _putchar(' ');
+      return (r);
     }
-  else (n < 0)
+  else if (n == a)
+    {
+      _putchar('0');
+      _putchar(',');
+      _putchar(' ');
+	return (a);
+    }
+  else (n == b)
 	 {
-	   putchar('-');
-	 });
- 
+	   _putchar('-');
+	   _putchar(',');
+	   _putchar(' ');
+	   return (b + '0');
+	 }
+  
