@@ -14,3 +14,4 @@ if (x != 2 && x != 4)
 _putchar(x);
 _putchar('\n');
 }
+}
