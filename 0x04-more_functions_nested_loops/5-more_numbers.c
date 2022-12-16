@@ -16,9 +16,10 @@ void more_numbers(void)
 	{
 	  _putchar(a);
 	  a++;
-	}
+	
       _putchar(10);
       i++
 	}
+    }
   putchar(10);
 }
