@@ -6,14 +6,15 @@
  *
  * Return: Always 0 (Success)
  */
-int _isupper(int c);
+int _isupper(int c)
 {
-  if (c >= 'A' && c <= 'Z')
-  {
-    return (1);
-  }
-  else
-  return (0);
+  int i;
+  for (i = 'A'; i <= 'Z' i++)
+    {
+      if (c == i)
+	return (1);
+      else
+	return (0);
+    }
 }
 
-  
