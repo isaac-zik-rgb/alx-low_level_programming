@@ -1,6 +1,6 @@
 #ifndef MAIN_H_
 #define MAIN_H_
-void _putchar(void);
+void _putchar(char);
 int _isupper(int c);
 int _isdigit(int c);
 int mul(int a, int b);
