@@ -5,9 +5,8 @@
  *
  * Return: Always 0 (Success)
  */
-void print_most_numbers(void)
+void print_most_numbers(int x)
 {
-int x;
 for (x = 48; x <= 57; x++)
 if (x != 2 || x != 4)
 _putchar(x);
