@@ -14,7 +14,7 @@ while (i < 10)
 a = 0;
 while (a <= 14)
 {
-_putchar(a);
+_putchar(a + '0');
 a++;
 }
 _putchar(10);
