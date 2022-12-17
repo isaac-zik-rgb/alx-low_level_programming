@@ -24,7 +24,7 @@ _putchar('\\');
 else if (y < i)
 _putchar(' ');
 }
-}
 _putchar('\n');
+}
 }
 }
