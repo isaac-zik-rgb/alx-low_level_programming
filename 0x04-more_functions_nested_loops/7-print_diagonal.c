@@ -15,10 +15,16 @@ _putchar('\n');
 else
 {
 int i;
-for (i = 1; i <= n; i++)
+for (i = 1; i <  n; i++)
 {
+for (y = 0; y < n; y++)
+{
+if (y == i)
 _putchar('\\');
+else if (y < i)
+_putchar(' ');
 }
 _putchar('\n');
+}
 }
 }
