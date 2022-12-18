@@ -6,6 +6,8 @@
  */
 int main(void)
 {
-int  positive_or_negative(0)
+  int n;
+  n = 0;
+  int  positive_or_negative(n);
 return (0);
 }
