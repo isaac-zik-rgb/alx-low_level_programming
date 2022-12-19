@@ -1,4 +1,4 @@
-#imclude <stdio.h>
+#include <stdio.h>
 #include "main.h"
 /**
  * _strlen - function that returns character length
@@ -9,7 +9,7 @@
 int _strlen(char *s)
 {
   int count;
-  s = count;
+  *s = count;
   for (count = 0; count != '\0'; count++)
     return count;
 }
