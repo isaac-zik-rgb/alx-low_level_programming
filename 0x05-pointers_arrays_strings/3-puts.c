@@ -9,8 +9,7 @@
 void _puts(char *str)
 {
 int i;
-  *str[]  = "hello, world";
-  for (i = 0; str[i]; i++)
-  _putchar(str[i]);
-  }
-  
+ *str[234];
+ for (i = 0; str[i]; i++)
+   _putchar(str[i]);
+}
