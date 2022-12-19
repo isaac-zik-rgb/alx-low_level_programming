@@ -6,10 +6,11 @@
  *
  * Return: The length of a character string
  */
-int _strlen(char *s[])
+int _strlen(char *s)
 {
   int count;
-  for (count = 0; *s[] != '\0'; count++)
+  s = count;
+  for (count = 0; count != '\0'; count++)
     return count;
 }
   
