@@ -8,9 +8,12 @@
  */
 void print_rev(char *s)
 {
-for (; *s == '\0'; s--)
-{
-_putchar(*s);
-}
+  char i;
+  for(; *s != '\0'; s++)
+    {
+      for(i = *s; i >= *s; i--)
+	{
+	  _putchar(i);
+	    }
 _putchar('\n');
 }
