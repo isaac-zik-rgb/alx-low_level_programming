@@ -8,12 +8,16 @@
  */
 void rev_string(char *s)
 {
-  int c;
-  c = 0;
-  s = &c;
-  while (c[] != '\0' c[] && >= 0)
+  int i, x;
+char t;
+/*finding strings length without null*/
+for(i = 0; i != '\0'; i++)
+  /*swaping the srings by looping half the strings*/
+  for (x = 1; x < i / 2; x++)
     {
-      c--;
-    }
-  return (c[]);
+      t = s[x];
+      s[x] = s[i - 1 - x];
+/*because the string of the array start with 0, -1*/
+s[i -1 -x] = t;
+}
 }
