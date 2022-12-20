@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include "main.h"
+/**
+ * puts2 - Function that print all character strings
+ * @s: A character data type is passes as a parameter
+ *
+ * Return: Always 0 success
+ */
+void puts2(char *str)
+{
+  int i, c;
+  c = 0;
+  while (s[c] != '\0')
+    {
+      c++;
+    }
+  for (i = 1; i < j; i += 2)
+    {
+      _putchar(s[i]);
+    }
+  _putchar('\n');
+}
