@@ -8,12 +8,12 @@
  */
 void rev_string(char *s)
 {
-  char c;
+  int c;
   c = 0;
   s = &c;
-  while (s[c] != '\0' && >= 0)
+  while (c[] != '\0' c[] && >= 0)
     {
       c--;
     }
-  return (s[c]);
+  return (c[]);
 }
