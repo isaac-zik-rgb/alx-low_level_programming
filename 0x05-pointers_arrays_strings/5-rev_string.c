@@ -18,6 +18,6 @@ for(i = 0; s[i] != '\0'; i++)
       t = s[x];
       s[x] = s[i - 1 - x];
 /*because the string of the array start with 0, -1*/
-s[i - 1 -x] = t;
+s[i - 1 - x] = t;
 }
 }
