@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-/**
+4/**
  * rev_string - this function reverses a strings
  * @s: A character data type is paased as a pointer parameter
  *
@@ -11,9 +11,9 @@ void rev_string(char *s)
   int i, x;
 char t;
 /*finding strings length without null*/
-for(i = 0; i != '\0'; i++)
+for(i = 0; i != '\0'; ++i)
   /*swaping the srings by looping half the strings*/
-  for (x = -1;  x < i / 2; x--)
+  for (x = 1;  x < i / 2; -xx)
     {
       t = s[x];
       s[x] = s[i - 1 - x];
