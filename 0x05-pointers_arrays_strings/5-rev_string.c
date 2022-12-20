@@ -14,6 +14,10 @@ char t;
 for(i = 0; i != '\0'; ++i)
   /*swaping the srings by looping half the strings*/
   for (x = 1;  x < i / 2; ++x)
+    while (x >= i)
+      {
+	x--
+	  }
     {
       t = s[x];
       s[x] = s[i - 1 - x];
