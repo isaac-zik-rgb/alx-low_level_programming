@@ -11,9 +11,9 @@ void rev_string(char *s)
   int i, x;
 char t;
 /*finding strings length without null*/
-for(i = 0; s[i] != '\0'; ++i)
+for(i = 0; s[i] != '\0'; i++)
   /*swaping the srings by looping half the strings*/
-  for (x = 0;  x < i / 2; ++x)
+  for (x = 0;  x < i / 2; x++)
      {
       t = s[x];
       s[x] = s[i - 1 - x];
