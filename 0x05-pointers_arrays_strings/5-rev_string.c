@@ -11,14 +11,10 @@ void rev_string(char *s)
   int i, x;
 char t;
 /*finding strings length without null*/
-for(i = 0; i != '\0'; ++i)
+for(i = 0; s[i] != '\0'; ++i)
   /*swaping the srings by looping half the strings*/
-  for (x = 1;  x < i / 2; ++x)
-    while (x >= i)
-      {
-	x--
-	  }
-    {
+  for (x = 0;  x < i / 2; ++x)
+     {
       t = s[x];
       s[x] = s[i - 1 - x];
 /*because the string of the array start with 0, -1*/
