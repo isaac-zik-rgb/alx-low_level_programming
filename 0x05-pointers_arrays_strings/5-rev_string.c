@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-4/**
+/**
  * rev_string - this function reverses a strings
  * @s: A character data type is paased as a pointer parameter
  *
