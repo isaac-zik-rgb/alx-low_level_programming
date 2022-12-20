@@ -8,16 +8,25 @@
  */
 void rev_string(char *s)
 {
-  int i, x;
-char t;
+  int i, x, y;
+  char *a, xyz;
+  a = s;
+  while (s[i] != '\0')
+    {
+      i++;
+    }
 /*finding strings length without null*/
-for(i = 0; s[i] != '\0'; i++)
+for(x = 1; x < i; i++)
+  {
+    a++;
+  }
   /*swaping the srings by looping half the strings*/
-  for (x = 0;  x < i / 2; x++)
+ for (y = 0;  y < (i / 2); y++)
      {
-      t = s[x];
-      s[x] = s[i - 1 - x];
-/*because the string of the array start with 0, -1*/
-s[i - 1 - x] = t;
-}
+       xyz = s[y];
+       s[y] = *a;
+       *a = xyz;
+       a--;
+       /*because the string of the array start with 0, -1*/
+     }
 }
