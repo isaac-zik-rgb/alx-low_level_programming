@@ -9,7 +9,7 @@
 void rev_string(char *s)
 {
   int i, x, y;
-  char *a, xyz;
+  char *a, clm;
   a = s;
   while (s[i] != '\0')
     {
@@ -23,10 +23,11 @@ for(x = 1; x < i; i++)
   /*swaping the srings by looping half the strings*/
  for (y = 0;  y < (i / 2); y++)
      {
-       xyz = s[y];
+       clm = s[y];
        s[y] = *a;
-       *a = xyz;
+       *a = clm;
        a--;
-       /*because the string of the array start with 0, -1*/
+      
      }
 }
+
