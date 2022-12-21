@@ -22,13 +22,13 @@ int _atoi(char *s)
 	{
 	  ise = 1;
 	  nv = (nv * 10) + (s[i] - '0');
-	  c++;
+	  i++;
 	}
       if (ise == 1)
 	{
 	  break;
 	}
-      c++;
+     i++;
     }
   nv *= max;
   return (nv);
