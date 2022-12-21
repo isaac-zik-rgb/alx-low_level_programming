@@ -18,7 +18,7 @@ int _atoi(char *s)
 	{
 	  max *= 1;
 	}
-      while (s[i] >= 48 && s[c] <= 57)
+      while (s[i] >= 48 && s[i] <= 57)
 	{
 	  ise = 1;
 	  nv = (nv * 10) + (s[i] - '0');
