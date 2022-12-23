@@ -2,24 +2,23 @@
 #include "main.h"
 /**
  * _strncpy - function that copies  strings
- *@dest: copies to
+41;320;0c *@dest: copies to
  *@src: copies from
  *@n: then number of bytes copied
  * Return: dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-  int m, p;
-  p = 0;
-  while (dest[p] != '\0')
+  int m;
+  for (m = 0; m < n && scr[m] != '\0' m++)
     {
-      p++;
+      dest[m] = src[m];
     }
-  for (m = 0; src[m] < n; m++)
+  while (m < n)
     {
-      dest[p] = src[m];
+      dest[m] = '\0';
+      m++;
     }
-  dest[p] = '\0';
   return dest;
 }
 
