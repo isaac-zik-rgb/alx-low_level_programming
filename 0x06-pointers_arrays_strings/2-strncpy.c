@@ -2,7 +2,7 @@
 #include "main.h"
 /**
  * _strncpy - function that copies  strings
-41;320;0c *@dest: copies to
+ *@dest: copies to
  *@src: copies from
  *@n: then number of bytes copied
  * Return: dest
