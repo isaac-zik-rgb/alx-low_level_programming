@@ -16,4 +16,5 @@ char *string_toupper(char *)
    *str[i] = ziko;
  i++;
     }
+  return (str);
 }
