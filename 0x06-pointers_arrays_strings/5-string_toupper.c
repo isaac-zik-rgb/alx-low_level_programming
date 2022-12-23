@@ -7,13 +7,12 @@
  */
 char *string_toupper(char *str)
 {
-  int  ziko, i;
+  int i;
   i  = 0;
-  ziko = 'a' - 'A';
   while (str[i] != '\0')
     {
  if ((str[i] >= 'a' && str[i] <= 'z'))
-   str[i] = ziko;
+   str[i] = str[i] - 32;
  ++i;
     }
   return (str);
