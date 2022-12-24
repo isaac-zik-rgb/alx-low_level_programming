@@ -8,6 +8,13 @@
  */
 void print_number(int n)
 {
-  while (n > 0)
-    _putchar(n + '0');
+  unsigned i;
+  if (n < 0)
+    {
+      _putchar('_');
+      n *= -1;
+    }
+  i = n;
+  if (i / 10)
+    _putchar(i % 10 + '0');
 }
