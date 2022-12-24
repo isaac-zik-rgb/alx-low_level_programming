@@ -17,7 +17,7 @@ for (y = 0; y < 10; y++)
 {
 if (s[i] == str1[y])
 {
-str1[i] = str2[y];
+s[i] = str2[y];
 }
 }
 }
