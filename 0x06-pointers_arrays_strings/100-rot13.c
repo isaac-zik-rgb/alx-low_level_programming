@@ -15,7 +15,7 @@ char *rot13(char *n)
   while ((n[i] >= 'a' && n[i] <= 'z') ||
  (n[i] >= 'A' && n[i] <= 'Z'))
  {
- if ((n[i] > 'm' && n[i] <= 'z') || (n[i] > 'M' && <= 'Z'))
+ if ((n[i] > 'm' && n[i] <= 'z') || (n[i] > 'M' && n[i]  <= 'Z'))
  {
  n[i] -= 13;
  break;
