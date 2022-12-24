@@ -6,7 +6,7 @@
  *
  * Return: str
  */
-char *leet(char *)
+char *leet(char *str)
 {
   int i, y;
   char str1[] = "aAeEoOtTlL";
@@ -21,5 +21,5 @@ char *leet(char *)
 	    }
 	}
     }
-  return(str2)
+  return (str);
     }
