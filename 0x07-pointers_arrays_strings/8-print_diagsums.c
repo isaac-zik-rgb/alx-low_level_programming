@@ -15,11 +15,11 @@ add1 = 0;
 add2 = 0;
 for (z = 0; z < size; z++)
 {
-add1 = a[z * size + z];
+add1 = add1 + a[z * size + z];
 }
 for (z = size - 1; z >= 0; z--)
 {
-add2 = a[z * size + (size - z - 1)];
+add2 += a[z * size + (size - z - 1)];
 }
 printf("%d, %d\n", add1, add2);
 }
