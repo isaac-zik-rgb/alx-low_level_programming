@@ -22,6 +22,5 @@ return (x * _pow_recursion(x, y - 1));
 }
   /*the base recursion in order to exit our recursion*/
 else
-{
 return (1);
 }
