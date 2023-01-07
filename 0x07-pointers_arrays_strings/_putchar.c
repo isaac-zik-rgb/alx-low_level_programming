@@ -9,5 +9,5 @@
  */
 void _putcha(char c)
 {
-  write(( &c, 3));
+  write((1, &c, 3));
 }
