@@ -18,6 +18,6 @@ char *_strdup(char *str)
   for (i = 0; str[i]; i++)
     strn[i] = str[i];
   strn[i] = '\0';
-  free(strn);
-  return (strn);
+   return (strn);
+   free(strn);
 }
