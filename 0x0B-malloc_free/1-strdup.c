@@ -16,8 +16,10 @@ char *_strdup(char *str)
   if (strn == NULL || str == NULL)
     return (NULL);
   for (i = 0; str[i]; i++)
-    strn[i] = str[i];
+    if (strn < str)
+      return (NULL);
+    else
+      strn[i] = str[i];
   strn[i] = '\0';
-   return (strn);
-   free(strn);
+  return (strn);
 }
