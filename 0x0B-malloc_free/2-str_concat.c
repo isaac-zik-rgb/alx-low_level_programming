@@ -2,7 +2,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * str_concat - concatenate two strings
+41;320;0c * str_concat - concatenate two strings
  * @s1: the first string to concatenate
  * @s2: the second string to concatenate
  * Return: a pointer to the concatenated string
@@ -20,13 +20,15 @@ char *str_concat(char *s1, char *s2)
     i++;
   while (s2[a] != '\0')
     a++;
-  strn = malloc(sizeof(char) * (i + a) + 1);
+  strn = malloc(sizeof(char) * (i +  a +1));
   if (strn == NULL)
     return (NULL);
   while (s1[i] != '\0')
     strn[i] = s1[i];
+  i++;
   while (s2[a] != '\0')
     strn[i] = s2[a];
+  a++;
   strn[a] = '\0';
   return (strn);
   
