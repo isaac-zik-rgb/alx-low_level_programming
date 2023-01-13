@@ -3,7 +3,7 @@
 #include "main.h"
 #include <string.h>
 /**
- * _strdub - a dublicated strings
+ * _strdup - a dublicated strings
  * @str: a pointer to a string
  *
  * Return: a pointer to an allocated memory on success
@@ -18,5 +18,6 @@ char *_strdup(char *str)
   for (i = 0; str[i]; i++)
     strn[i] = str[i];
   strn[i] = '\0';
+  free(strn);
   return (strn);
 }
