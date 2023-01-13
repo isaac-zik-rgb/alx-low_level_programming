@@ -10,15 +10,13 @@
  */
 char *_strdub(char *str)
 {
-  char *strn;
-  int s;
-  s = sizeof(str) / sizeof(char);
-  strn = malloc(sizeof(char) * s);
   int i;
-  if (s == NULL || strn == NULL)
+  char *strn;
+  strn = malloc(strlen(str) + 1);
+  if (strn == NULL || str == NULL)
     return (NULL);
   for (i = 0; str[i]; i++)
-    s[i] = str[i];
-  s[i] = '\0';
-  return (s);
+    strn[i] = str[i];
+  strn[i] = '\0';
+  return (strn);
 }
