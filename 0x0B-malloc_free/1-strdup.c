@@ -8,7 +8,7 @@
  *
  * Return: a pointer to an allocated memory on success
  */
-char *_strdub(char *str)
+char *_strdup(char *str)
 {
   int i;
   char *strn;
