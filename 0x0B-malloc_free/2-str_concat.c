@@ -29,8 +29,8 @@ char *str_concat(char *s1, char *s2)
   i++;
   while (s2[a] != '\0')
     strn[i] = s2[a];
-  a++;
-  strn[a] = '\0';
+  i++, a++;
+  strn[i] = '\0';
   return (strn);
   
 }
