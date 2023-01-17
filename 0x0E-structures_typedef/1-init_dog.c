@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "dog.h"
 #include "main.h"
 /**
  *init_dog - a structure thats cumulate data types
@@ -8,8 +9,11 @@
  *@age: a float variable
  * Return: Nothing;
  */
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void init_dog(struct dog *d, char *name __attribute__((unused)), float age __attribute__((unused)), char *owner __attribute__((unused)))
 {
-  struct dog my_dog;
-  *d = &my_dog;
+   struct dog dog;
+  d = &dog;
+  (*d).name = "Isaac";
+  (*d).owner = "Gravity";
+  (*d).age = 23;
 }
