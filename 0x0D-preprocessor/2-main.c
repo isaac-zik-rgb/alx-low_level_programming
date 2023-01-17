@@ -6,7 +6,7 @@
 *
 * Return: Nothing
 */
-int main(int argc __attribute__((unused)), char *argv[])
+int main(void)
 {
 printf("%s\n", __FILE__);
 return (0);
