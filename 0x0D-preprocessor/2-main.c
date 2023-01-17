@@ -1,10 +1,8 @@
 #include <stdio.h>
 /**
  *main - Entry point
- *@argc: argument count
- *@argv: argument vector
-*
-* Return: Nothing
+ *
+ *Return: Nothing
 */
 int main(void)
 {
