@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "calc.h"
+#include "3-calc.h"
 /**
  * get_op_fun - return a pointer to the correspoinding function that has th op
  * @s: a pointer to the operator func
@@ -17,7 +17,7 @@ op_t ops[] = {
         {NULL, NULL}
 };
 int i = 0;
-while (ops[i].op != NULL && (ops[i].op != *s))
+ while (ops[i].op != NULL && *(ops[i]).op != *s)
 {
 i++;
 }
