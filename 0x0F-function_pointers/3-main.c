@@ -1,13 +1,10 @@
 #include <stdio.h>
 #include "3-calc.h"
-#include "function_pointers.h"
-#include "3-op_functions.c"
-#include "3-get_op_func.c"
 #include <stdlib.h>
 /**
  * main - checking my code
  * @argc: numbers of argument supply to my program
- * @argv: A array of pointers to tge argument
+ * @argv: A array of pointers to the argument
  *
  * Return: 0 succsess
  */
