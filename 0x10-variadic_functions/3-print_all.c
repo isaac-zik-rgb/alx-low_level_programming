@@ -18,7 +18,7 @@ while (format[j])
 switch (format[j])
 {
 case 'c':
-printf("%s%c", stn, va_arg(print, int));
+printf("%s%c", stn, va_arg(print, char));
 break;
 case 'i':
 printf("%s%d", stn, va_arg(print, int));
