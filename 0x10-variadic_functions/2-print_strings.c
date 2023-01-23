@@ -17,7 +17,7 @@ for (y = 0; y < n; y++)
 {
 str = va_arg(string, char *);
 if (str == NULL)
-printf("nil");
+printf("(nil)");
 else
 printf("%s", str);
 if (y != (n - 1) && separator != NULL)
