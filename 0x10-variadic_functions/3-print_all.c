@@ -13,7 +13,7 @@ va_list print;
 va_start(print, format);
 if (format)
 {
-while (format[i])
+while (format[j])
 {
 switch (format[j])
 {
