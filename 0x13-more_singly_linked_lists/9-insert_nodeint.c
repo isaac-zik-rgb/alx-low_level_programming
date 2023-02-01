@@ -14,7 +14,7 @@ unsigned int m;
 listint_t *new_ptr;
 listint_t *temp = *head;
 new_ptr = malloc(sizeof(listint_t));
-if (!new_ptr ||!head)
+if (!new_ptr || !head)
 return (NULL);
 new_ptr->n = n;
 new_ptr->next = NULL;
