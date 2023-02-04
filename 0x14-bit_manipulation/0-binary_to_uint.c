@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdlib.h>
 /**
  * binary_to_unit - convert binary number to an unsigned integer
  * @b: a pointer to a string of 0s and 1s
@@ -8,7 +8,7 @@
  */
 unsigned int binary_to_unit(const char *b)
 {
-int i;
+unsigned int i;
 unsigned int numb = 0;
 if (!b)
 return (0);
