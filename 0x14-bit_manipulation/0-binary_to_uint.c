@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * binary_to_unit - convert binary number to an unsigned integer
