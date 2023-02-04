@@ -8,15 +8,15 @@
  */
 unsigned int binary_to_unit(const char *b)
 {
-unsigned int i;
-unsigned int numb = 0;
-if (!b)
-return (0);
-for (i = 0; b[i]; i++)
-{
-if (b[i] < '0' || b[i] > '1')
-return (0);
-numb = 2 * numb + (b[i] - '0');
-}
-return (numb);
+  int i;
+  unsigned int numb = 0;
+  if (b == NULL)
+    return (0) ;
+  for (i = 0; b[i]; i++)
+    {
+      if (b[i] < '0' || b[i] > '1')
+	return (0);
+      numb = 2 * numb + (b[i] - '0');
+    }
+  return (numb);
 }
