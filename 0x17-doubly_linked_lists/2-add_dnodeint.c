@@ -20,11 +20,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
   temp->next = NULL;
   temp->prev = NULL;
 
-  while(new != NULL)
-    {
-      temp->next = (*head);
-      (*head)->prev = temp;
-      new = temp;
-    }
+  temp->next = (*head);
+  (*head)->prev = temp;
+  new = temp;
   return (new);
 }
