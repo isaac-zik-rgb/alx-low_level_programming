@@ -10,7 +10,8 @@
 
 void free_dlistint(dlistint_t *head)
 {
-  if (head != NULL)
+  if (!head)
     free(head);
+
   head = NULL;
 }
