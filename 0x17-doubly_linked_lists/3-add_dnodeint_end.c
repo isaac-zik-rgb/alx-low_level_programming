@@ -24,11 +24,13 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
   while (tail->prev != NULL)
     tail = tail->prev;
 
-  while (tail != NULL)
+  while (head != NULL)
     {
-      tail = tail->next;
+      head = tail = end_node;
+      head = head->next;
     }
-  tail->next = end_node;
-  end_node->prev = tail;
+  end_node->prev = head;
+  head->next = end_node;
+  tail = end_node;
   return (tail);
 }
