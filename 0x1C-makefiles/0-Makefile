@@ -1,13 +1,13 @@
-school : all
+all : school
 
-all : m.o school.o
-gcc -c all m.o school.o
+school: main.o school.o
+gcc main.o school.o -o school
 
-m.o : m.c main.h
-gcc -c m.c
+main.o : main.c m.h
+gcc -c -wall main.c
 
-school.o : school.c main.h
-gcc -c school.c
+school.o : school.c m.h
+gcc -c -wall school.c
 
-clean:
-rm school all
+clean :
+rm shool
