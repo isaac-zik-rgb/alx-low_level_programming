@@ -1,14 +1,14 @@
-CC=gcc -Wall -Werror
-
-SRC=main.c school.c
+SRC = main.c school.c
+CC = gcc
+CFLAGS = -Wall -Werror
 
 all: school
 
-school: main.o school.o
-	$(CC) -o school main.o school.o
+school: $(SRC:.c=.o)
+	$(CC) $(CFLAGS) -o school $(SRC:.c=.o)
 
-main.o school.o: $(SRC) m.h
-	$(CC) -c -o main.o school.o $(SRC)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f school *.o
