@@ -1,12 +1,13 @@
-all: school
-school: m.o school.o
-gcc m.o school.o -o school
+school : all
 
-m.o: m.c
+all : m.o school.o
+gcc -c all m.o school.o
+
+m.o : m.c main.h
 gcc -c m.c
 
-school.o: school.c
+school.o : school.c main.h
 gcc -c school.c
 
 clean:
-rm -rf *.o
+rm school all
