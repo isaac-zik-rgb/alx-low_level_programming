@@ -1,0 +1,14 @@
+CC=gcc -Wall -Werror
+
+SRC=main.c school.c
+
+all: school
+
+school: main.o school.o
+	$(CC) -o school main.o school.o
+
+main.o school.o: $(SRC) m.h
+	$(CC) -c -o main.o school.o $(SRC)
+
+clean:
+	rm -f school *.o
