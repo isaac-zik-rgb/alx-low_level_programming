@@ -1,2 +1,12 @@
-all: main.c school.c
-gcc -o school main.c school.c -l
+all: school
+school: m.o school.o
+gcc m.o school.o -o school
+
+m.o: m.c
+gcc -c m.c
+
+school.o: school.c
+gcc -c school.c
+
+clean:
+rm -rf *.o
