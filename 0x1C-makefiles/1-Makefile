@@ -6,11 +6,5 @@ SRC= main.c school.c
 
 all: school
 
-school: $(SRC:c=.o)
-	$(CC) $(CFLAGS) -o school $(SRC:.c=.o)
-
-%.o:%.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-clean:
-	rm -f school *.o
+school: $(SRC)
+	$(CC) $(CFLAGS) -o school
