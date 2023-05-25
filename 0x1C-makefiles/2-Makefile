@@ -13,6 +13,7 @@ NAME:=school
 CC:=gcc
 SRC:=main.c school.c
 OBJ:=$(SRC:.c=.o)
+.PHONY: all clean
 
 all: $(NAME)
 
