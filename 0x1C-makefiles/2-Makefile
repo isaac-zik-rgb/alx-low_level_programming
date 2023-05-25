@@ -1,0 +1,25 @@
+# first useful makefile
+#Requirment: name of the executable: `school`
+#rules: all: all rules builds my executable
+#Variables: CC, SRC, OBJ, NAME
+#CC: the compiler to be used
+#SRC: the .c files
+#OBJ: the .o fikes
+#NAME: the name of the executable
+#the all rule should recomplie only the updated source files, it should not
+#list all the .o files
+
+NAME:=school
+CC:=gcc
+SRC:=main.c school.c
+OBJ:=$(SRC:.c=.o)
+
+all: $(NAME)
+
+$NAME: $(OBJ)
+	$(CC) -o $(NAME) $^
+%.o:%.c
+	$(CC) -c $<
+
+clean:
+	rm -f $(NAME) $(OBJ)
