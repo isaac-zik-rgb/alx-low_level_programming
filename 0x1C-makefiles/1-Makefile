@@ -14,4 +14,3 @@ school: $(SRC:c=.o)
 
 clean:
 	rm -f school *.o
-x

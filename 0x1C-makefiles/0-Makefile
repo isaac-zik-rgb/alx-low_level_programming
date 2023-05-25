@@ -9,5 +9,5 @@ main.o: main.c m.h
 school.o: school.c m.h
 	gcc -Wall -Werror -c -o school.o school.c
 
-clean
+clean:
 	rm -f school *.o
