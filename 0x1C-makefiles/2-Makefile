@@ -1,14 +1,13 @@
 # first useful makefile
 
-NAME:=school
+CC=gcc
 
-CC:=gcc
 
-SRC:=main.c school.c
+SRC= main.c school.c
 
-OBJ:=$(SRC:.c=.o)
+OBJ= $(SRC:.c=.o)
 
-.PHONY: all clean
+NAME = school
 
 all: $(NAME)
 
@@ -17,7 +16,7 @@ $NAME: $(OBJ)
 	$(CC) -o $(NAME) $^
 
 %.o:%.c
-	$(CC) -c $<
+	$(CC) -c $< -o $@
 
 clean:
 	rm -f $(NAME) $(OBJ)
