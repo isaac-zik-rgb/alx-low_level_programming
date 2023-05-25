@@ -1,0 +1,13 @@
+all: school
+
+school: main.o school.o
+	gcc -Wall -Werror -o school main.o school.o
+
+main.o: main.c m.h
+	gcc -Wall -Werror -c -o main.o main.c
+
+school.o: school.c m.h
+	gcc -Wall -Werror -c -o school.o school.c
+
+clean
+	rm -f school *.o
