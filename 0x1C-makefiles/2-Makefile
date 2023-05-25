@@ -16,7 +16,7 @@ $NAME: $(OBJ)
 	$(CC) -o $(NAME) $^
 
 %.o:%.c
-	$(CC) -c $< -o $@
+	$(CC) -c $< -o $$@
 
 clean:
 	rm -f $(NAME) $(OBJ)
