@@ -15,7 +15,7 @@ int is_not_array = 1;
 size_t num;
 if (array != NULL)
 {
-for (num = 0; num <= size; num++)
+for (num = 0; num < size; num++)
 {
 if (array[num] == value)
 {
